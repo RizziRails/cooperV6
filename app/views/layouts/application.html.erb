@@ -12,6 +12,19 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
+	
+	  <% if user_signed_in? %>
+  
+	   <div class='space'>coopersystem.srv.br</div>
+	  
+	     <p align='center'>  <img src="http://cooper1.s3.amazonaws.com/lb4A.jpg"  width="100%" height="20%" /> </p>
+       </div>
+
+	  <%end%>
+	
+	
+	
+	
     <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
